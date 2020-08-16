@@ -1,0 +1,42 @@
+<script>
+    var v, y;
+    function sum (v, y) {
+        return v + y;
+    }
+    function dif (v, y) {
+        return v - y;
+    }
+    function multi (v, y) {
+        return v * y;
+    }
+    function div (v, y) {
+        if(v != 0)
+        return v / y;
+    }
+
+    // 6 дальше
+    v = +promt("Введите число ви");
+    y = +promt("Введите число игрек");
+    oper = promt("Введите операцию +, -, *, /");
+
+    function mathOperation(v, y, oper) {
+        switch (oper) {
+            case "+":
+                alert(sum(v, y));
+                break;
+            case "-":
+                alert(dif(v, y));
+                break;
+            case "*":
+                alert(multi(v, y));
+                break;
+            case "/":
+                alert(div(v, y));
+                break;
+            default:
+                alert("Введен неверный знак");
+                break;
+        }
+    }
+    mathOperation(v, y, oper)
+</script>
