@@ -1,0 +1,12 @@
+<script>
+    var a = (Math.random() *15) .toFixed(0);
+    function alert(a) {
+        if (a == 15) {
+            document.write(a);
+            return;
+        }
+        document.write(a++ + " ");
+        alert(a)
+    }
+    alert(a)
+</script>
